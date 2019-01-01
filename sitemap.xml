@@ -34,8 +34,20 @@
   </url>
   
   <url>
+    <loc>http://mengw.github.io/categories/2017/</loc>
+    <lastmod>2017-05-11T17:27:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://mengw.github.io/categories/2018/</loc>
     <lastmod>2018-12-22T15:32:32+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mengw.github.io/categories/2019/</loc>
+    <lastmod>2019-01-01T15:06:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -76,12 +88,6 @@
   </url>
   
   <url>
-    <loc>http://mengw.github.io/categories/self-introduction/</loc>
-    <lastmod>2015-10-31T20:46:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://mengw.github.io/tags/self-introduction/</loc>
     <lastmod>2015-10-31T20:46:25+00:00</lastmod>
     <priority>0</priority>
@@ -89,6 +95,12 @@
   
   <url>
     <loc>http://mengw.github.io/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mengw.github.io/tags/summary/</loc>
+    <lastmod>2017-05-11T17:27:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   

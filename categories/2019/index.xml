@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 on Mengw Compare Beyond</title>
+    <link>http://mengw.github.io/categories/2019/</link>
+    <description>Recent content in 2019 on Mengw Compare Beyond</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jan 2019 15:06:27 +0800</lastBuildDate>
+    
+	<atom:link href="http://mengw.github.io/categories/2019/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>博客内容由hexo转为hugo</title>
+      <link>http://mengw.github.io/post/2019/transfer-project/</link>
+      <pubDate>Tue, 01 Jan 2019 15:06:27 +0800</pubDate>
+      
+      <guid>http://mengw.github.io/post/2019/transfer-project/</guid>
+      <description>&lt;h1 id=&#34;改变博客的生成技术框架&#34;&gt;改变博客的生成技术框架&lt;/h1&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
