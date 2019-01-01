@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self Introduction on Mengw Compare Beyond</title>
+    <link>http://mengw.github.io/tags/self-introduction/</link>
+    <description>Recent content in Self Introduction on Mengw Compare Beyond</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Oct 2015 20:46:25 +0000</lastBuildDate>
+    
+	<atom:link href="http://mengw.github.io/tags/self-introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://mengw.github.io/post/2015/hello-world/</link>
+      <pubDate>Sat, 31 Oct 2015 20:46:25 +0000</pubDate>
+      
+      <guid>http://mengw.github.io/post/2015/hello-world/</guid>
+      <description>&lt;h1 id=&#34;self-introduction&#34;&gt;self-introduction&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hello World!
+Welcome to Mengw! This is my static blog.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;record-something-that-happens-every-day&#34;&gt;Record something that happens every day!&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I major in computer science in BUPT. Although I am not good at coding,
+  I have a passion to achieve some goals!&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

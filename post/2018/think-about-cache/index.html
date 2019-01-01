@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.53" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>系统的缓存问题 &middot; Mengw Compare Beyond</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="http://mengw.github.iocss/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://mengw.github.iocss/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://mengw.github.iocss/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://mengw.github.iocss/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Mengw Compare Beyond" />
+
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://mengw.github.io"><h1>Mengw Compare Beyond</h1></a>
+      <p class="lead">
+       这里是Mengw的个人博客 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://mengw.github.io">Home</a> </li>
+        
+		 <li><a href="http://mengw.github.io/categories">categories</a> </li>
+		 <li><a href="http://mengw.github.io/tags">tags</a> </li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. HUGO All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>系统的缓存问题</h1>
+  <time datetime=2018-12-22T15:32:32&#43;0800 class="post-date">Sat, Dec 22, 2018</time>
+  <h1 id="浅谈系统的缓存问题">浅谈系统的缓存问题</h1>
+
+<blockquote>
+<p>不同的系统或多或少的会使用缓存，这篇文章我主要通过自己项目中涉及使用缓存的场景，进行分析。本片文章关注的缓存仅指Web应用的业务缓存，不涉及浏览器以及其他方面的缓存。</p>
+</blockquote>
+
+<pre><code>计算机组成原理罗列了计算机各个组件获取的运行速度，差异巨大。而业务场景所说的缓存是基于内存，是比从硬盘上获取数据以及通过网络协议传输的数据，花费时间更少的方式。所以，使用缓存的场景是为了缩短数据获取的时间，进而提高了系统的性能。
+</code></pre>
+
+<h2 id="场景一">场景一：</h2>
+
+<p>​        系统A模块，依赖上游的HTTP服务，获取信息，接口返回JSON格式的数据，虽然数据短小，但是依赖的接口对访问有频率的限制，会较有一定概率的出现访问接口出错的问题，为避免出现此种情况对业务的影响，考虑到此类信息在一定的时间范围内是不变的，故选择的方案是如果通过接口成功，会放到缓存中，如果出现失败，会从缓存去获取。此时，缓存的角色是一个保底的操作，实际对业务用户获取数据的时间提升不是很明显。</p>
+
+<h2 id="场景二">场景二：</h2>
+
+<p>​        系统B模块，依赖上游服务的HTTP接口，接口的数据会依据业务方配置的获取数据的语句不固定时间自动生成好数据。</p>
+
+<p>​   由于接口数据量是百万级别，上游服务的数据还具有下面的策略：</p>
+
+<p>​        *  如果第一次请求接口，如果数据没有准备好，上游系统会先经过查询，然后把结果缓存并返回结果。</p>
+
+<p>​   *  如果数据准备好，直接返回缓存的数据</p>
+
+<p>​   通过服务的策略，可知消耗的时间在查询，数据传输上。通过计算得到传输的数据的大小是5-6M，那么计算网络的带宽速度是2M/s，那么仅仅网络传输这块就需要大约3秒的时间。获取到数据后还需要加上对数据进行解析的2s时间，整体的数据获取以及处理的时间对于应用的用户是无法容忍的，因此为了提高模块数据的处理速度，很容易想到的一个方案是，获取到接口的数据后，把解析后的数据存储起来，后续用户对数据的操作完全基于缓存。</p>
+
+<h2 id="缓存实现方案总结">缓存实现方案总结</h2>
+
+<p>​       缓存数据存放的位置，可以是应用的堆内存，也可以使堆外存，还可以独立成一个服务。总体而言是尽可能地消除整个数据链路的耗时环节，此时获取数据是整个链路的瓶颈。</p>
+
+<h3 id="jvm-缓存">JVM 缓存</h3>
+
+<p>最常用的就是hashmap或者ConcurrentHashMap</p>
+
+<h3 id="ehcache-guava-cache">Ehcache、Guava Cache</h3>
+
+<p>这部分内存是和本体服务在一起的，提供比JDK自身更加丰富的功能。后面看目前咖啡因目前替换了spring5中的缓存地位。</p>
+
+<h3 id="分布式缓存">分布式缓存</h3>
+
+<p>redis，ignite，hazelcast等</p>
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

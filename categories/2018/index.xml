@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2018 on Mengw Compare Beyond</title>
+    <link>http://mengw.github.io/categories/2018/</link>
+    <description>Recent content in 2018 on Mengw Compare Beyond</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Dec 2018 15:32:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://mengw.github.io/categories/2018/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>系统的缓存问题</title>
+      <link>http://mengw.github.io/post/2018/think-about-cache/</link>
+      <pubDate>Sat, 22 Dec 2018 15:32:32 +0800</pubDate>
+      
+      <guid>http://mengw.github.io/post/2018/think-about-cache/</guid>
+      <description>&lt;h1 id=&#34;浅谈系统的缓存问题&#34;&gt;浅谈系统的缓存问题&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;不同的系统或多或少的会使用缓存，这篇文章我主要通过自己项目中涉及使用缓存的场景，进行分析。本片文章关注的缓存仅指Web应用的业务缓存，不涉及浏览器以及其他方面的缓存。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

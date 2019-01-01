@@ -6,9 +6,28 @@
     <description>Recent content in Tags on Mengw Compare Beyond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 22 Dec 2018 15:32:32 +0800</lastBuildDate>
     
 	<atom:link href="http://mengw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cache</title>
+      <link>http://mengw.github.io/tags/cache/</link>
+      <pubDate>Sat, 22 Dec 2018 15:32:32 +0800</pubDate>
+      
+      <guid>http://mengw.github.io/tags/cache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self Introduction</title>
+      <link>http://mengw.github.io/tags/self-introduction/</link>
+      <pubDate>Sat, 31 Oct 2015 20:46:25 +0000</pubDate>
+      
+      <guid>http://mengw.github.io/tags/self-introduction/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
