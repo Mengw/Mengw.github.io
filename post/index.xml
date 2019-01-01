@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mengw Compare Beyond</title>
+    <link>http://mengw.github.io/post/</link>
+    <description>Recent content in Posts on Mengw Compare Beyond</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 May 2017 17:27:15 +0000</lastBuildDate>
+    
+	<atom:link href="http://mengw.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>项目总结</title>
+      <link>http://mengw.github.io/post/project-think/</link>
+      <pubDate>Thu, 11 May 2017 17:27:15 +0000</pubDate>
+      
+      <guid>http://mengw.github.io/post/project-think/</guid>
+      <description>&lt;hr /&gt;
+
+&lt;p&gt;最近的时间,进一步的接触项目经常用到的框架，有了一定的思考和心得，有些结论还需要接下来进行验证和证实！&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gradle项目的使用&lt;/li&gt;
+&lt;li&gt;GWT的使用&lt;/li&gt;
+&lt;li&gt;Shell脚本的重要性&lt;/li&gt;
+&lt;li&gt;代码设计的思考&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://mengw.github.io/post/hello-world/</link>
+      <pubDate>Sat, 31 Oct 2015 20:46:25 +0000</pubDate>
+      
+      <guid>http://mengw.github.io/post/hello-world/</guid>
+      <description>&lt;h1 id=&#34;self-introduction&#34;&gt;self-introduction&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hello World!
+Welcome to Mengw! This is my static blog.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;record-something-that-happens-every-day&#34;&gt;Record something that happens every day!&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I major in computer science in BUPT. Although I am not good at coding,
+  I have a passion to achieve some goals!&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
