@@ -3,7 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://mengw.github.io/post/2019/summary/</loc>
+    <lastmod>2019-01-01T20:06:27+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://mengw.github.io/post/2019/transfer-project/</loc>
+    <lastmod>2019-01-01T15:06:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mengw.github.io/post/2019/transfer-project1/</loc>
     <lastmod>2019-01-01T15:06:27+08:00</lastmod>
   </url>
   
@@ -41,7 +51,7 @@
   
   <url>
     <loc>http://mengw.github.io/categories/2018/</loc>
-    <lastmod>2018-12-22T15:32:32+08:00</lastmod>
+    <lastmod>2019-01-01T20:06:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -52,13 +62,13 @@
   </url>
   
   <url>
-    <loc>http://mengw.github.io/categories/cache/</loc>
+    <loc>http://mengw.github.io/tags/cache/</loc>
     <lastmod>2018-12-22T15:32:32+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mengw.github.io/tags/cache/</loc>
+    <loc>http://mengw.github.io/categories/cache/</loc>
     <lastmod>2018-12-22T15:32:32+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -77,13 +87,13 @@
   
   <url>
     <loc>http://mengw.github.io/</loc>
-    <lastmod>2019-01-01T15:06:27+08:00</lastmod>
+    <lastmod>2019-01-01T20:06:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://mengw.github.io/post/</loc>
-    <lastmod>2019-01-01T15:06:27+08:00</lastmod>
+    <lastmod>2019-01-01T20:06:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -100,7 +110,7 @@
   
   <url>
     <loc>http://mengw.github.io/tags/summary/</loc>
-    <lastmod>2017-05-11T17:27:15+00:00</lastmod>
+    <lastmod>2019-01-01T20:06:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,23 @@
     <description>Recent content in 2018 on Mengw Compare Beyond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Dec 2018 15:32:32 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 20:06:27 +0800</lastBuildDate>
     
 	<atom:link href="http://mengw.github.io/categories/2018/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018年总结</title>
+      <link>http://mengw.github.io/post/2019/summary/</link>
+      <pubDate>Tue, 01 Jan 2019 20:06:27 +0800</pubDate>
+      
+      <guid>http://mengw.github.io/post/2019/summary/</guid>
+      <description>&lt;h3 id=&#34;2018年总结&#34;&gt;2018年总结&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;岁月不居，时节如流！2018年消逝在指缝之间，过往一年遇到了很多人事物，感触和收获交织在一起，促进我在新的一年继续前行，希望不忘初心，砥砺前行。在表达2019年的愿望之际，借用五年前的一部电视剧的台词：欲带皇冠，必承其重。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>系统的缓存问题</title>
@@ -17,7 +30,7 @@
       <pubDate>Sat, 22 Dec 2018 15:32:32 +0800</pubDate>
       
       <guid>http://mengw.github.io/post/2018/think-about-cache/</guid>
-      <description>&lt;h1 id=&#34;浅谈系统的缓存问题&#34;&gt;浅谈系统的缓存问题&lt;/h1&gt;
+      <description>&lt;h3 id=&#34;浅谈系统的缓存问题&#34;&gt;浅谈系统的缓存问题&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;不同的系统或多或少的会使用缓存，这篇文章我主要通过自己项目中涉及使用缓存的场景，进行分析。本片文章关注的缓存仅指Web应用的业务缓存，不涉及浏览器以及其他方面的缓存。&lt;/p&gt;
