@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2019 on Mengw Compare Beyond</title>
-    <link>http://mengw.github.io/categories/2019/</link>
-    <description>Recent content in 2019 on Mengw Compare Beyond</description>
+    <title>Commerce on Mengw Compare Beyond</title>
+    <link>http://mengw.github.io/tags/commerce/</link>
+    <description>Recent content in Commerce on Mengw Compare Beyond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 Apr 2019 20:06:27 +0800</lastBuildDate>
     
-	<atom:link href="http://mengw.github.io/categories/2019/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://mengw.github.io/tags/commerce/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,15 +21,6 @@
 
 &lt;pre&gt;&lt;code class=&#34;language-2018年五月收看，记录在纸张上，2019年4月整理收录到电子博客上&#34;&gt;2018年五月收看，记录在纸张上，2019年4.27周末整理收录到电子博客上
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>博客内容由hexo转为hugo</title>
-      <link>http://mengw.github.io/post/2019/transfer-project/</link>
-      <pubDate>Tue, 01 Jan 2019 15:06:27 +0800</pubDate>
-      
-      <guid>http://mengw.github.io/post/2019/transfer-project/</guid>
-      <description>&lt;h3 id=&#34;改变博客的生成技术框架&#34;&gt;改变博客的生成技术框架&lt;/h3&gt;</description>
     </item>
     
   </channel>
